@@ -102,10 +102,7 @@ function App() {
                       </span>
                     </div>
                     <p className="text-gray-600 leading-relaxed">{dish.description}</p>
-                    <div className="mt-4 flex items-center">
-                     
-                      <span className="text-sm text-gray-500 ml-2">Fresh & Hot</span>
-                    </div>
+                    
                   </div>
                 ))}
               </div>
