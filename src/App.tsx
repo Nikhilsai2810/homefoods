@@ -1,7 +1,28 @@
 import React from 'react';
 import { Phone, MapPin, Clock, Star, Utensils } from 'lucide-react';
+import { useCart } from './hooks/useCart';
+import { CartModal } from './components/CartModal';
+import { CustomerForm } from './components/CustomerForm';
+import { CartButton } from './components/CartButton';
 
 function App() {
+  const {
+    cartItems,
+    isCartOpen,
+    setIsCartOpen,
+    customerInfo,
+    setCustomerInfo,
+    showCustomerForm,
+    setShowCustomerForm,
+    addToCart,
+    removeFromCart,
+    updateQuantity,
+    clearCart,
+    getTotalPrice,
+    getItemCount,
+    processOrder,
+  } = useCart();
+
   // We'll structure the menu by category
   const menu = {
     "తీపి వంటకాలు (SWEETS)": [
@@ -40,10 +61,31 @@ function App() {
     ],
   };
 
+  const handleAddToCart = (dish: any, category: string) => {
+    addToCart({
+      name: dish.name,
+      description: dish.description,
+      price: dish.price,
+      category: category,
+    });
+  };
+
+  const handleProceedToCheckout = () => {
+    setIsCartOpen(false);
+    setShowCustomerForm(true);
+  };
+
+  const handleOrderSubmit = () => {
+    processOrder();
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50">
       {/* Decorative Top Border */}
       <div className="h-3 bg-gradient-to-r from-orange-400 via-red-500 to-yellow-400"></div>
+      
+      {/* Cart Button */}
+      <CartButton itemCount={getItemCount()} onClick={() => setIsCartOpen(true)} />
       
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         {/* Header Section */}
@@ -103,6 +145,12 @@ function App() {
                     </div>
                     <p className="text-gray-600 leading-relaxed">{dish.description}</p>
                     
+                    <button
+                      onClick={() => handleAddToCart(dish, category)}
+                      className="mt-4 w-full bg-gradient-to-r from-orange-500 to-red-500 text-white py-2 px-4 rounded-lg font-semibold hover:from-orange-600 hover:to-red-600 transition-all transform hover:scale-105 shadow-md"
+                    >
+                      Add to Cart
+                    </button>
                   </div>
                 ))}
               </div>
@@ -205,6 +253,27 @@ function App() {
 
       {/* Decorative Bottom Border */}
       <div className="h-3 bg-gradient-to-r from-yellow-400 via-red-500 to-orange-400"></div>
+      
+      {/* Cart Modal */}
+      <CartModal
+        isOpen={isCartOpen}
+        onClose={() => setIsCartOpen(false)}
+        cartItems={cartItems}
+        onUpdateQuantity={updateQuantity}
+        onRemoveItem={removeFromCart}
+        onClearCart={clearCart}
+        totalPrice={getTotalPrice()}
+        onProceedToCheckout={handleProceedToCheckout}
+      />
+      
+      {/* Customer Form Modal */}
+      <CustomerForm
+        isOpen={showCustomerForm}
+        onClose={() => setShowCustomerForm(false)}
+        customerInfo={customerInfo}
+        onUpdateCustomerInfo={setCustomerInfo}
+        onSubmit={handleOrderSubmit}
+      />
     </div>
   );
 }
