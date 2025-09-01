@@ -103,11 +103,7 @@ function App() {
                     </div>
                     <p className="text-gray-600 leading-relaxed">{dish.description}</p>
                     <div className="mt-4 flex items-center">
-                      <div className="flex items-center">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
-                        ))}
-                      </div>
+                     
                       <span className="text-sm text-gray-500 ml-2">Fresh & Hot</span>
                     </div>
                   </div>
