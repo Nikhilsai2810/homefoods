@@ -100,7 +100,7 @@ export const CartModal: React.FC<CartModalProps> = ({
           )}
         </div>
 
-        {/* Footer */}
+        {/* Footer with Total and Checkout */}
         {cartItems.length > 0 && (
           <div className="border-t border-gray-200 p-6 bg-gray-50">
             <div className="flex items-center justify-between mb-4">
