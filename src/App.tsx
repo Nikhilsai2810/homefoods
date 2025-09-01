@@ -6,7 +6,7 @@ function App() {
   const menu = {
     "తీపి వంటకాలు (SWEETS)": [
       { name: "అరిసెలు (Ariselu)", description: "1 కేజీకి", price: "₹350" },
-      { name: "నేతి అరిసెలు (Nethi Ariselu)", description: "1 కేజీకి", price: "₹400" },
+      { name: "నేతి అరిసెలు (Nethi Ariselu)", description: "1 కేజీకి", price: "₹450" },
       { name: "బూరెలు (Boorelu)", description: "1 కేజీకి", price: "₹350" },
       { name: "కజ్జి కాయలు (Kajji Kayalu)", description: "1 కేజీకి", price: "₹350" },
       { name: "గవ్వలు (బెల్లం/పంచదార)", description: "1 కేజీకి", price: "₹350" },
