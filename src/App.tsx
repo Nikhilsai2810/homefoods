@@ -211,8 +211,20 @@ function App() {
               <div className="flex items-center">
                 <MapPin className="w-6 h-6 text-red-600 mr-4" />
                 <div>
-                  <p className="font-semibold text-gray-800">Location</p>
-                  <p className="text-gray-600">Guntur</p>
+                 <p className="font-semibold text-gray-800">Location</p>
+<p className="text-gray-600">
+  90-1-217, 4th lane Venkata Ramana Colony, Guntur, Andhra Pradesh - 522006 (8C26+VGV Guntur, Andhra Pradesh), 
+  (
+    <a 
+      href="https://maps.app.goo.gl/PUZzYhx21GNHzA7T8" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="text-blue-600 hover:underline"
+    >
+      Maps
+    </a>
+  )
+</p>
                 </div>
               </div>
             </div>
