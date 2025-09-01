@@ -34,6 +34,9 @@ function App() {
     ],
     "ప్రత్యేకమైనవి (SPECIAL)": [
       { name: "పాలతాలికలు (Palathalikalu)", description: "1 కేజీకి", price: "₹350" },
+      { name: "పులిహోర  (Pulihora)", description: "1 కేజీకి", price: "₹330" },
+      { name: "పూర్ణాలు  (Poornalu)", description: "ఒక్కటి (1) ", price: "₹10" },
+      { name: "గారెలు  (Garelu)", description: "ఒక్కటి (1)", price: "₹10" },
     ],
   };
 
