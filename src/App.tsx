@@ -25,9 +25,9 @@ function App() {
 
   // We'll structure the menu by category
   const menu = {
-    "తీపి వంటకాలు (SWEETS)": [
+    "తీపి వంటకాలు (SWEETS)" [
       { name: "అరిసెలు (Ariselu)", description: "1 కేజీకి", price: "₹350" },
-      { name: "నేతి అరిసెలు (Nethi Ariselu)", description: "1 కేజీకి", price: "₹450" },
+      { name: "నేతి అరిసెలు (Nethi Ariselu)", description: "1 కేజీకి", price: "₹500" },
       { name: "బూరెలు (Boorelu)", description: "1 కేజీకి", price: "₹350" },
       { name: "కజ్జి కాయలు (Kajji Kayalu)", description: "1 కేజీకి", price: "₹350" },
       { name: "గవ్వలు (బెల్లం/పంచదార)", description: "1 కేజీకి", price: "₹350" },
@@ -35,8 +35,12 @@ function App() {
       { name: "సున్నుండలు (బెల్లం/పంచదార, నెయ్యి)", description: "1 కేజీకి", price: "₹500" },
       { name: "రవ్వ లడ్డు (Rava Laddu)", description: "1 కేజీకి", price: "₹350" },
       { name: "బూందీ మిఠాయి (Boondhi Mitai)", description: "1 కేజీకి", price: "₹350" },
+      { name: "నువ్వుల చెక్క  (Nuvvula Chekka)", description: "1 కేజీకి", price: "500" },
+      { name: "పప్పు చెక్క  (Pappu Chekka)", description: "1 కేజీకి", price: "₹350" },
+
+
     ],
-    "కారం వంటకాలు (HOT)": [
+    "కారం వంటకాలు (HOT)" [
       { name: "చక్కలు (Chekkalu)", description: "1 కేజీకి", price: "₹330" },
       { name: "చక్కరాలు (Chekkaralu)", description: "1 కేజీకి", price: "₹330" },
       { name: "కారం గవ్వలు (Karam Gavvalu)", description: "1 కేజీకి", price: "₹330" },
@@ -44,16 +48,27 @@ function App() {
       { name: "పల్లి పకోడీ (Palli Pakodi)", description: "1 కేజీకి", price: "₹330" },
       { name: "బూందీ (Boondhi)", description: "1 కేజీకి", price: "₹330" },
     ],
-    "పచ్చళ్ళు (PACHADLU)": [
+    "పచ్చళ్ళు (PACHADLU)" [
       { name: "టమాటో పచ్చడి (Tomato Pachadi)", description: "1 కేజీకి", price: "₹420" },
-      { name: "మామిడి కాయ పచ్చడి (Mamidi Kaya Pachadi)", description: "1 కేజీకి", price: "₹420" },
-      { name: "ఉసిరి కాయ పచ్చడి (Oosiri Kaya Pachadi)", description: "1 కేజీకి", price: "₹420" },
+      { name: "మామిడి కాయ పచ్చడి (Mamidi Kaya Pachadi)", description: "1 కేజీకి", price: "₹450" },
+      { name: "ఉసిరి కాయ పచ్చడి (Oosiri Kaya Pachadi)", description: "1 కేజీకి", price: "₹450" },
       { name: "నిమ్మకాయ పచ్చడి (Nimmakaya Pachadi)", description: "1 కేజీకి", price: "₹420" },
       { name: "ఆకుల గోంగూర పచ్చడి (Gongura Pachadi)", description: "1 కేజీకి", price: "₹420" },
       { name: "ఎండు మిర్చి కారప్పచ్చడి (Yendu Mirchi Karrapachadi)", description: "1 కేజీకి", price: "₹420" },
-      { name: "చికెన్ పచ్చడి (Chicken Pachadi)", description: "1 కేజీకి", price: "₹1050" },
+      { name: "చిక్కుడు కాయ పచ్చడి  (Chikkudu Kaya Pachadi )", description: "1 కేజీకి", price: "₹1200" },
+      { name: "చికెన్ పచ్చడి బోన్ లెస్ (Chicken Pachadi Boneless)", description: "1 కేజీకి", price: "₹1200" },
+      { name: "చికెన్ పచ్చడి బోన్స్ (Chicken Pachadi Bones)", description: "1 కేజీకి", price: "₹900" },
     ],
-    "ప్రత్యేకమైనవి (SPECIAL)": [
+   "కారాలు  (Kaaralu)" [
+      { name: "మాడుపు కారం (Maadupu Kaaram)", description: "1 కేజీకి", price: "₹400" },
+      { name: "మునగాకు కారం (Munnagaku Kaaram)", description: "1 కేజీకి", price: "₹400" },
+      { name: "పల్లీల కారం (Pallila kaaram)", description: "1 కేజీకి", price: "₹400" },
+      { name: "సంభర్ కారం (Sambhar Kaaram)", description: "1 కేజీకి", price: "₹400" },
+      { name: "చిన్నఉల్లిపాయ కారం (Chinnullipaya Kaaram)", description: "1 కేజీకి", price: "₹400" },
+      { name: "గొడ్డు కారం (Goddu Kaaram)", description: "1 కేజీకి", price: "₹400" },
+    ],
+
+    "ప్రత్యేకమైనవి (SPECIAL)" [
       { name: "పాలతాలికలు (Palathalikalu)", description: "1 కేజీకి", price: "₹350" },
       { name: "పులిహోర  (Pulihora)", description: "1 కేజీకి", price: "₹330" },
       { name: "పూర్ణాలు  (Poornalu)", description: "ఒక్కటి (1) ", price: "₹10" },
