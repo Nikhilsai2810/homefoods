@@ -25,7 +25,7 @@ function App() {
 
   // We'll structure the menu by category
   const menu = {
-    "తీపి వంటకాలు (SWEETS)" [
+    "తీపి వంటకాలు (SWEETS)": [
       { name: "అరిసెలు (Ariselu)", description: "1 కేజీకి", price: "₹350" },
       { name: "నేతి అరిసెలు (Nethi Ariselu)", description: "1 కేజీకి", price: "₹500" },
       { name: "బూరెలు (Boorelu)", description: "1 కేజీకి", price: "₹350" },
@@ -40,7 +40,7 @@ function App() {
 
 
     ],
-    "కారం వంటకాలు (HOT)" [
+    "కారం వంటకాలు (HOT)": [
       { name: "చక్కలు (Chekkalu)", description: "1 కేజీకి", price: "₹330" },
       { name: "చక్కరాలు (Chekkaralu)", description: "1 కేజీకి", price: "₹330" },
       { name: "కారం గవ్వలు (Karam Gavvalu)", description: "1 కేజీకి", price: "₹330" },
@@ -48,7 +48,7 @@ function App() {
       { name: "పల్లి పకోడీ (Palli Pakodi)", description: "1 కేజీకి", price: "₹330" },
       { name: "బూందీ (Boondhi)", description: "1 కేజీకి", price: "₹330" },
     ],
-    "పచ్చళ్ళు (PACHADLU)" [
+    "పచ్చళ్ళు (PACHADLU)": [
       { name: "టమాటో పచ్చడి (Tomato Pachadi)", description: "1 కేజీకి", price: "₹420" },
       { name: "మామిడి కాయ పచ్చడి (Mamidi Kaya Pachadi)", description: "1 కేజీకి", price: "₹450" },
       { name: "ఉసిరి కాయ పచ్చడి (Oosiri Kaya Pachadi)", description: "1 కేజీకి", price: "₹450" },
@@ -59,7 +59,7 @@ function App() {
       { name: "చికెన్ పచ్చడి బోన్ లెస్ (Chicken Pachadi Boneless)", description: "1 కేజీకి", price: "₹1200" },
       { name: "చికెన్ పచ్చడి బోన్స్ (Chicken Pachadi Bones)", description: "1 కేజీకి", price: "₹900" },
     ],
-   "కారాలు  (Kaaralu)" [
+   "కారాలు  (Kaaralu)": [
       { name: "మాడుపు కారం (Maadupu Kaaram)", description: "1 కేజీకి", price: "₹400" },
       { name: "మునగాకు కారం (Munnagaku Kaaram)", description: "1 కేజీకి", price: "₹400" },
       { name: "పల్లీల కారం (Pallila kaaram)", description: "1 కేజీకి", price: "₹400" },
@@ -68,7 +68,7 @@ function App() {
       { name: "గొడ్డు కారం (Goddu Kaaram)", description: "1 కేజీకి", price: "₹400" },
     ],
 
-    "ప్రత్యేకమైనవి (SPECIAL)" [
+    "ప్రత్యేకమైనవి (SPECIAL)": [
       { name: "పాలతాలికలు (Palathalikalu)", description: "1 కేజీకి", price: "₹350" },
       { name: "పులిహోర  (Pulihora)", description: "1 కేజీకి", price: "₹330" },
       { name: "పూర్ణాలు  (Poornalu)", description: "ఒక్కటి (1) ", price: "₹10" },
